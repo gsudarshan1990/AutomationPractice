@@ -1,0 +1,99 @@
+package com.application2;
+
+import static org.junit.Assert.assertTrue;
+
+import java.util.Random;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.application2.AutomationPracticePage;
+
+public class AutomationPracticeTestPage {
+
+	AutomationPracticePage app;
+
+
+	
+	public AutomationPracticeTestPage()
+	{
+		app=new AutomationPracticePage();
+		
+	}
+	
+
+	/*
+	@Test
+	public void verifywomentab()
+	{
+		
+		Assert.assertTrue(app.elementfound(app.getWomenTab()));
+	
+	}
+	@Test
+	public void verifydresstab()
+	{
+		Assert.assertTrue(app.elementfound(app.getDressesTab()));
+	}
+	
+	@Test
+	public void verifytshirts()
+	{
+		Assert.assertTrue(app.elementfound(app.getTShirts()));
+	}
+
+	@Test
+	public void verifywomentabclick()
+	{
+		String url=app.clickWomen();
+		
+		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=3&controller=category");
+		app.moveToHomePage();
+	}
+	
+	@Test
+	public void verifydresstabclick()
+	{
+		String url=app.clickdresstab();
+		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=8&controller=category");
+		app.moveToHomePage();
+	}
+	
+	@Test
+	public void verifytshirtstabclick()
+	{
+		String url=app.clicktshirtstab();
+		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=5&controller=category");
+		app.moveToHomePage();
+	}
+	
+	@Test(dependsOnMethods = { "verifywomentabclick" ,"verifydresstabclick","verifytshirtstabclick"}, enabled=false)
+	public void verifynewsletter()
+	{
+		app.enternewslettertext("suda@gmail.com");
+	}
+	
+	@Test(dependsOnMethods = { "verifywomentabclick" ,"verifydresstabclick","verifytshirtstabclick"})
+	public void randomemailaddress()
+	{
+		String message =app.enternewslettertext1();
+		Assert.assertTrue(message.contains("Newsletter : You have successfully subscribed to this newsletter."));
+		
+	}
+	
+	@Test(dependsOnMethods= {"randomemailaddress"})
+	public void checkAddToCart()
+	{
+		int count=app.mousehover();
+		Assert.assertEquals(7, count);
+	}*/
+	
+	@Test
+	public void clickSummerDresses()
+	{
+		app.mousehoverdresses();
+	}
+}
+
