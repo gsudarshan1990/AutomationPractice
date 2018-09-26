@@ -83,13 +83,13 @@ public class AutomationPracticeTestPage {
 		app.driver.navigate().back();
 	}
 	
-	@Test(dependsOnMethods= {"randomemailaddress"})
+/*	@Test(dependsOnMethods= {"randomemailaddress"})
 	public void checkAddToCart()
 	{
 		int count=app.mousehover();
 		Assert.assertEquals(7, count);
 		
-	}
+	}*/
 	
 	@Test(dependsOnMethods= {"randomemailaddress"})
 	public void verifyAddToCart()
