@@ -22,9 +22,9 @@ public class AutomationPracticeTestPage {
 		app=new AutomationPracticePage();
 		
 	}
-	
 
-	/*
+
+
 	@Test
 	public void verifywomentab()
 	{
@@ -44,31 +44,32 @@ public class AutomationPracticeTestPage {
 		Assert.assertTrue(app.elementfound(app.getTShirts()));
 	}
 
+	
+	
 	@Test
 	public void verifywomentabclick()
 	{
-		String url=app.clickWomen();
-		
-		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=3&controller=category");
-		app.moveToHomePage();
+		String Title=app.clickwomentab();
+		Assert.assertEquals(Title, "Women - My Store");
+		app.driver.navigate().back();
 	}
 	
 	@Test
 	public void verifydresstabclick()
 	{
-		String url=app.clickdresstab();
-		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=8&controller=category");
-		app.moveToHomePage();
+		String Title=app.clickdresstab();
+		Assert.assertEquals(Title, "Dresses - My Store");
+		app.driver.navigate().back();
 	}
 	
 	@Test
 	public void verifytshirtstabclick()
 	{
-		String url=app.clicktshirtstab();
-		Assert.assertEquals(url,"http://automationpractice.com/index.php?id_category=5&controller=category");
-		app.moveToHomePage();
+		String Title=app.clicktshirtstab();
+		Assert.assertEquals(Title, "T-shirts - My Store");
+		app.driver.navigate().back();
 	}
-	
+
 	@Test(dependsOnMethods = { "verifywomentabclick" ,"verifydresstabclick","verifytshirtstabclick"}, enabled=false)
 	public void verifynewsletter()
 	{
@@ -78,9 +79,8 @@ public class AutomationPracticeTestPage {
 	@Test(dependsOnMethods = { "verifywomentabclick" ,"verifydresstabclick","verifytshirtstabclick"})
 	public void randomemailaddress()
 	{
-		String message =app.enternewslettertext1();
-		Assert.assertTrue(message.contains("Newsletter : You have successfully subscribed to this newsletter."));
-		
+		Assert.assertTrue(app.getSuccessMessage().getText().contains("Newsletter : You have successfully subscribed to this newsletter."));
+		app.driver.navigate().back();
 	}
 	
 	@Test(dependsOnMethods= {"randomemailaddress"})
@@ -88,12 +88,27 @@ public class AutomationPracticeTestPage {
 	{
 		int count=app.mousehover();
 		Assert.assertEquals(7, count);
-	}*/
-	
-	@Test
-	public void clickSummerDresses()
-	{
-		app.mousehoverdresses();
+		
 	}
+	
+	@Test(dependsOnMethods= {"randomemailaddress"})
+	public void verifyAddToCart()
+	{
+		System.out.println(app.getListOfProducts().size());
+		
+		for(WebElement e:app.getListOfProducts())
+		{
+			Assert.assertTrue(app.elementfound(app.getaddtocart(e)));
+		}
+	}
+
+	
+	@Test(dependsOnMethods= {"verifyAddToCart"})
+	public void clicksummerdresslink()
+	{
+		String expected=app.clicksummerdress();
+		Assert.assertEquals("Summer Dresses - My Store", expected);
+	}
+	
 }
 

@@ -55,8 +55,10 @@ public class AutomationPracticePage extends BasePage {
 	private WebElement firstdressProduct;
 	
 	
-	@FindBy(xpath="//li//ul//li[2]//ul//li[3]//a[@title='Summer Dresses']")
-	private WebElement summerdress;
+	
+	@FindBy(xpath="//p[contains(@class,'alert alert-success')]")
+	private WebElement successmessage;
+	
 	
 	
 	public AutomationPracticePage()
@@ -79,11 +81,9 @@ public class AutomationPracticePage extends BasePage {
 		return tshirts;
 	}
 	
-	public String clickWomen()
+	public String clickdresstab()
 	{
-		womentab.click();
-		String url=driver.getCurrentUrl();
-		return url;
+		return clickWebElement(dresstab);
 				
 	}
 	
@@ -92,18 +92,15 @@ public class AutomationPracticePage extends BasePage {
 		movetoHomePage.click();
 	}
 	
-	public String clickdresstab()
+	public String clickwomentab()
 	{
-		dresstab.click();
-		String url=driver.getCurrentUrl();
-		return url;
+		return clickWebElement(womentab);
 	}
+	
 	
 	public String clicktshirtstab()
 	{
-		tshirts.click();
-		String url=driver.getCurrentUrl();
-		return url;
+		return clickWebElement(tshirts);
 	}
 	
 	
@@ -117,18 +114,28 @@ public class AutomationPracticePage extends BasePage {
 		
 	}
 	
-	public String enternewslettertext1()
+	public WebElement getSuccessMessage()
 	{
-		Random r=new Random();
-		int value=r.nextInt(5000);
-		String email="sudarshan"+String.valueOf(value)+"@gmail.com";
-		newslettertext.sendKeys(email);
-		newsletterbutton.click();
-		WebElement success=driver.findElement(By.xpath("//p[contains(@class,'alert alert-success')]"));
-		String message1=success.getText();
-		return message1;
-		
+		sendemails(newslettertext,newsletterbutton);
+		return successmessage;
 	}
+	
+	
+
+
+	public List<WebElement> getListOfProducts()
+	{
+		return dresseslist;
+	}
+	
+	public WebElement getaddtocart(WebElement parent)
+	{
+		mousehover(parent);
+		return parent.findElement(By.xpath(".//*[text()='Add to cart']"));
+	}
+	
+	
+	
 	
 	public int mousehover()
 	{
@@ -158,10 +165,25 @@ public class AutomationPracticePage extends BasePage {
 		return count;
 	}
 	
-	public void mousehoverdresses()
+	public String clicksummerdress()
 	{
-		Actions actions=new Actions(driver);
-		actions.clickAndHold(this.dresstab).moveToElement(driver.findElement(By.linkText("Summer Dresses"))).click().build().perform();
+
+		driver.navigate().to("http://automationpractice.com/index.php");
+		mousehover(dresstab);
+		WebDriverWait wait=new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[contains(@class,'menu-content')]//li[2]//ul[contains(@class,'submenu-container')]//li[3]//a[text()='Summer Dresses']")));
+		WebElement summerdress1=driver.findElement(By.xpath("//ul[contains(@class,'menu-content')]//li[2]//ul[contains(@class,'submenu-container')]//li[3]//a[text()='Summer Dresses']"));
+		mousehover(summerdress1);
+		summerdress1.click();
+		String Title=driver.getTitle();
+		return Title;
+				
+
+		
+		
+		
+		
 		
 	}
+
 }

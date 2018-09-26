@@ -5,7 +5,7 @@
     <classes>
       <class name="com.application2.AutomationPracticeTestPage">
         <methods>
-          <include name="clickSummerDresses"/>
+          <include name="clicksummerdresslink"/>
         </methods>
       </class> <!-- com.application2.AutomationPracticeTestPage -->
     </classes>

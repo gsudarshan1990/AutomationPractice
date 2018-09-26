@@ -1,11 +1,13 @@
 package com.application2;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class BasePage {
@@ -51,5 +53,29 @@ public class BasePage {
 		return Integer.parseInt(allstrings[2]);
 	}
 	
-
+	
+	public String clickWebElement(WebElement element)
+	{
+		element.click();
+		String Title=driver.getTitle();
+		return Title;
+	}
+	
+	public void sendemails(WebElement newslettertext2, WebElement newsletterbutton2) {
+			// TODO Auto-generated method stub
+			
+		Random r=new Random();
+		int value=r.nextInt(5000);
+		String email="sudarshan"+String.valueOf(value)+"@gmail.com";
+		newslettertext2.sendKeys(email);
+		newsletterbutton2.click();
+		}
+	
+	
+	public void mousehover(WebElement element)
+	{
+		Actions actions=new Actions(driver);
+		actions.moveToElement(element).build().perform();
+	}
+	
 }
