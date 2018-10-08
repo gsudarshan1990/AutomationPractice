@@ -2,48 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="1" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40208" started-at="2018-09-26T05:15:20Z" finished-at="2018-09-26T05:16:00Z">
+  <suite name="Default suite" duration-ms="47644" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:18:28Z">
     <groups>
+      <group name="first group">
+        <method signature="AutomationPracticeTestPage.clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="clicksummerdresslink" class="com.application2.AutomationPracticeTestPage"/>
+      </group> <!-- first group -->
     </groups>
-    <test name="Default test" duration-ms="40208" started-at="2018-09-26T05:15:20Z" finished-at="2018-09-26T05:16:00Z">
+    <test name="Default test" duration-ms="47644" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:18:28Z">
+      <class name="com.application2.SummerDressTest">
+        <test-method status="PASS" signature="selectAtoZ()[pri:0, instance:com.application2.SummerDressTest@461ad730]" name="selectAtoZ" duration-ms="20786" depends-on-groups="first group" started-at="2018-10-08T09:18:07Z" finished-at="2018-10-08T09:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAtoZ -->
+      </class> <!-- com.application2.SummerDressTest -->
       <class name="com.application2.AutomationPracticeTestPage">
-        <test-method status="PASS" signature="verifydresstab()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifydresstab" duration-ms="75" started-at="2018-09-26T05:15:20Z" finished-at="2018-09-26T05:15:20Z">
+        <test-method status="PASS" signature="verifydresstab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstab" duration-ms="60" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:17:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifydresstab -->
-        <test-method status="PASS" signature="verifydresstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifydresstabclick" duration-ms="6092" started-at="2018-09-26T05:15:20Z" finished-at="2018-09-26T05:15:26Z">
+        <test-method status="PASS" signature="verifydresstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstabclick" duration-ms="4568" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifydresstabclick -->
-        <test-method status="PASS" signature="verifytshirts()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifytshirts" duration-ms="68" started-at="2018-09-26T05:15:26Z" finished-at="2018-09-26T05:15:26Z">
+        <test-method status="PASS" signature="verifytshirts()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirts" duration-ms="88" started-at="2018-10-08T09:17:45Z" finished-at="2018-10-08T09:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytshirts -->
-        <test-method status="PASS" signature="verifytshirtstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifytshirtstabclick" duration-ms="5430" started-at="2018-09-26T05:15:26Z" finished-at="2018-09-26T05:15:32Z">
+        <test-method status="PASS" signature="verifytshirtstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirtstabclick" duration-ms="3467" started-at="2018-10-08T09:17:45Z" finished-at="2018-10-08T09:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytshirtstabclick -->
-        <test-method status="PASS" signature="verifywomentab()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifywomentab" duration-ms="72" started-at="2018-09-26T05:15:32Z" finished-at="2018-09-26T05:15:32Z">
+        <test-method status="PASS" signature="verifywomentab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentab" duration-ms="49" started-at="2018-10-08T09:17:48Z" finished-at="2018-10-08T09:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifywomentab -->
-        <test-method status="PASS" signature="verifywomentabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifywomentabclick" duration-ms="6042" started-at="2018-09-26T05:15:32Z" finished-at="2018-09-26T05:15:38Z">
+        <test-method status="PASS" signature="verifywomentabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentabclick" duration-ms="5235" started-at="2018-10-08T09:17:48Z" finished-at="2018-10-08T09:17:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifywomentabclick -->
-        <test-method status="PASS" signature="randomemailaddress()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="randomemailaddress" duration-ms="8848" started-at="2018-09-26T05:15:38Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifydresstabclick, com.application2.AutomationPracticeTestPage.verifytshirtstabclick, com.application2.AutomationPracticeTestPage.verifywomentabclick" finished-at="2018-09-26T05:15:47Z">
+        <test-method status="PASS" signature="randomemailaddress()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="randomemailaddress" duration-ms="6197" started-at="2018-10-08T09:17:54Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifydresstabclick, com.application2.AutomationPracticeTestPage.verifytshirtstabclick, com.application2.AutomationPracticeTestPage.verifywomentabclick" finished-at="2018-10-08T09:18:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- randomemailaddress -->
-        <test-method status="PASS" signature="checkAddToCart()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="checkAddToCart" duration-ms="2215" started-at="2018-09-26T05:15:47Z" depends-on-methods="com.application2.AutomationPracticeTestPage.randomemailaddress" finished-at="2018-09-26T05:15:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAddToCart -->
-        <test-method status="PASS" signature="verifyAddToCart()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="verifyAddToCart" duration-ms="1116" started-at="2018-09-26T05:15:49Z" depends-on-methods="com.application2.AutomationPracticeTestPage.randomemailaddress" finished-at="2018-09-26T05:15:50Z">
+        <test-method status="PASS" signature="verifyAddToCart()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifyAddToCart" duration-ms="680" started-at="2018-10-08T09:18:00Z" depends-on-methods="com.application2.AutomationPracticeTestPage.randomemailaddress" finished-at="2018-10-08T09:18:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method status="PASS" signature="clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@2d29b4ee]" name="clicksummerdresslink" duration-ms="10170" started-at="2018-09-26T05:15:50Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifyAddToCart" finished-at="2018-09-26T05:16:00Z">
+        <test-method status="PASS" signature="clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="clicksummerdresslink" duration-ms="6448" started-at="2018-10-08T09:18:01Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifyAddToCart" finished-at="2018-10-08T09:18:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicksummerdresslink -->

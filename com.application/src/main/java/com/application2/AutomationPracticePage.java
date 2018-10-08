@@ -177,13 +177,8 @@ public class AutomationPracticePage extends BasePage {
 		summerdress1.click();
 		String Title=driver.getTitle();
 		return Title;
-				
-
-		
-		
-		
-		
-		
 	}
 
+
+	
 }

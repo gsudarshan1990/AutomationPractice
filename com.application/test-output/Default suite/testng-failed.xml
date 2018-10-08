@@ -5,9 +5,19 @@
     <classes>
       <class name="com.application2.AutomationPracticeTestPage">
         <methods>
+          <include name="verifytshirtstabclick"/>
+          <include name="verifywomentabclick"/>
+          <include name="verifyAddToCart"/>
+          <include name="randomemailaddress"/>
+          <include name="verifydresstabclick"/>
           <include name="clicksummerdresslink"/>
         </methods>
       </class> <!-- com.application2.AutomationPracticeTestPage -->
+      <class name="com.application2.SummerDressTest">
+        <methods>
+          <include name="selectAtoZ"/>
+        </methods>
+      </class> <!-- com.application2.SummerDressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

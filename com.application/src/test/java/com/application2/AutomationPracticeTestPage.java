@@ -103,12 +103,11 @@ public class AutomationPracticeTestPage {
 	}
 
 	
-	@Test(dependsOnMethods= {"verifyAddToCart"})
+	@Test(dependsOnMethods= {"verifyAddToCart"},groups="first group")
 	public void clicksummerdresslink()
 	{
 		String expected=app.clicksummerdress();
 		Assert.assertEquals("Summer Dresses - My Store", expected);
 	}
-	
 }
 
