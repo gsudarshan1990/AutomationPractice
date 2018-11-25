@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="11" passed="10">
+<testng-results skipped="0" failed="0" ignored="1" total="12" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47644" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:18:28Z">
+  <suite name="Default suite" duration-ms="67900" started-at="2018-10-08T12:25:21Z" finished-at="2018-10-08T12:26:29Z">
     <groups>
       <group name="first group">
         <method signature="AutomationPracticeTestPage.clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="clicksummerdresslink" class="com.application2.AutomationPracticeTestPage"/>
       </group> <!-- first group -->
     </groups>
-    <test name="Default test" duration-ms="47644" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:18:28Z">
+    <test name="Default test" duration-ms="67900" started-at="2018-10-08T12:25:21Z" finished-at="2018-10-08T12:26:29Z">
       <class name="com.application2.SummerDressTest">
-        <test-method status="PASS" signature="selectAtoZ()[pri:0, instance:com.application2.SummerDressTest@461ad730]" name="selectAtoZ" duration-ms="20786" depends-on-groups="first group" started-at="2018-10-08T09:18:07Z" finished-at="2018-10-08T09:18:28Z">
+        <test-method status="PASS" signature="selectAtoZ()[pri:0, instance:com.application2.SummerDressTest@461ad730]" name="selectAtoZ" duration-ms="20671" depends-on-groups="first group" started-at="2018-10-08T12:25:48Z" finished-at="2018-10-08T12:26:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectAtoZ -->
+        <test-method status="PASS" signature="reduceprice()[pri:0, instance:com.application2.SummerDressTest@461ad730]" name="reduceprice" duration-ms="20661" started-at="2018-10-08T12:26:09Z" depends-on-methods="com.application2.SummerDressTest.selectAtoZ" finished-at="2018-10-08T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reduceprice -->
       </class> <!-- com.application2.SummerDressTest -->
       <class name="com.application2.AutomationPracticeTestPage">
-        <test-method status="PASS" signature="verifydresstab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstab" duration-ms="60" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:17:40Z">
+        <test-method status="PASS" signature="verifydresstab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstab" duration-ms="70" started-at="2018-10-08T12:25:21Z" finished-at="2018-10-08T12:25:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifydresstab -->
-        <test-method status="PASS" signature="verifydresstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstabclick" duration-ms="4568" started-at="2018-10-08T09:17:40Z" finished-at="2018-10-08T09:17:45Z">
+        <test-method status="PASS" signature="verifydresstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifydresstabclick" duration-ms="3964" started-at="2018-10-08T12:25:21Z" finished-at="2018-10-08T12:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifydresstabclick -->
-        <test-method status="PASS" signature="verifytshirts()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirts" duration-ms="88" started-at="2018-10-08T09:17:45Z" finished-at="2018-10-08T09:17:45Z">
+        <test-method status="PASS" signature="verifytshirts()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirts" duration-ms="54" started-at="2018-10-08T12:25:25Z" finished-at="2018-10-08T12:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytshirts -->
-        <test-method status="PASS" signature="verifytshirtstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirtstabclick" duration-ms="3467" started-at="2018-10-08T09:17:45Z" finished-at="2018-10-08T09:17:48Z">
+        <test-method status="PASS" signature="verifytshirtstabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifytshirtstabclick" duration-ms="3038" started-at="2018-10-08T12:25:25Z" finished-at="2018-10-08T12:25:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytshirtstabclick -->
-        <test-method status="PASS" signature="verifywomentab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentab" duration-ms="49" started-at="2018-10-08T09:17:48Z" finished-at="2018-10-08T09:17:48Z">
+        <test-method status="PASS" signature="verifywomentab()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentab" duration-ms="96" started-at="2018-10-08T12:25:28Z" finished-at="2018-10-08T12:25:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifywomentab -->
-        <test-method status="PASS" signature="verifywomentabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentabclick" duration-ms="5235" started-at="2018-10-08T09:17:48Z" finished-at="2018-10-08T09:17:54Z">
+        <test-method status="PASS" signature="verifywomentabclick()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifywomentabclick" duration-ms="3820" started-at="2018-10-08T12:25:29Z" finished-at="2018-10-08T12:25:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifywomentabclick -->
-        <test-method status="PASS" signature="randomemailaddress()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="randomemailaddress" duration-ms="6197" started-at="2018-10-08T09:17:54Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifydresstabclick, com.application2.AutomationPracticeTestPage.verifytshirtstabclick, com.application2.AutomationPracticeTestPage.verifywomentabclick" finished-at="2018-10-08T09:18:00Z">
+        <test-method status="PASS" signature="randomemailaddress()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="randomemailaddress" duration-ms="6715" started-at="2018-10-08T12:25:32Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifydresstabclick, com.application2.AutomationPracticeTestPage.verifytshirtstabclick, com.application2.AutomationPracticeTestPage.verifywomentabclick" finished-at="2018-10-08T12:25:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- randomemailaddress -->
-        <test-method status="PASS" signature="verifyAddToCart()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifyAddToCart" duration-ms="680" started-at="2018-10-08T09:18:00Z" depends-on-methods="com.application2.AutomationPracticeTestPage.randomemailaddress" finished-at="2018-10-08T09:18:01Z">
+        <test-method status="PASS" signature="verifyAddToCart()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="verifyAddToCart" duration-ms="1417" started-at="2018-10-08T12:25:39Z" depends-on-methods="com.application2.AutomationPracticeTestPage.randomemailaddress" finished-at="2018-10-08T12:25:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method status="PASS" signature="clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="clicksummerdresslink" duration-ms="6448" started-at="2018-10-08T09:18:01Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifyAddToCart" finished-at="2018-10-08T09:18:07Z">
+        <test-method status="PASS" signature="clicksummerdresslink()[pri:0, instance:com.application2.AutomationPracticeTestPage@7068e664]" name="clicksummerdresslink" duration-ms="7343" started-at="2018-10-08T12:25:40Z" depends-on-methods="com.application2.AutomationPracticeTestPage.verifyAddToCart" finished-at="2018-10-08T12:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicksummerdresslink -->

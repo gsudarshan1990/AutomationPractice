@@ -16,6 +16,7 @@
       <class name="com.application2.SummerDressTest">
         <methods>
           <include name="selectAtoZ"/>
+          <include name="reduceprice"/>
         </methods>
       </class> <!-- com.application2.SummerDressTest -->
     </classes>
